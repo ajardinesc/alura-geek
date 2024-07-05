@@ -13,7 +13,7 @@ function createCard (name, price, image, id) {
         </div>
        
             <div class="card-container--info">
-                <p>${}</p>
+                <p>${name}</p>
                 <div class="card-container--value">
                     <p>$ ${price} </p>
                     <button class="delete-button" data-id="${id}">
