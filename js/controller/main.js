@@ -1,6 +1,6 @@
 import { servicesProducts } from "../service/product-service.js";
 
-const productContainer =document.querySelector("[data-products]");
+const productContainer = document.querySelector("[data-products]");
 const form = document.querySelector("[data-form]");
 
 function createCard (name, price, image, id) {
@@ -11,7 +11,7 @@ function createCard (name, price, image, id) {
         <div class="img-container">
             <img class="img__producto" src="${image}" alt="${name}">
         </div>
-
+       
             <div class="card-container--info">
                 <p>Nombre</p>
                 <div class="card-container--value">
@@ -20,7 +20,6 @@ function createCard (name, price, image, id) {
                         <img class="img__borrar" src="./assets/trash.png" alt="Eliminar">
                 </div>
             </div>
-        
     `;
 
     const deleteButton = card.querySelector(".delete-button");
@@ -29,6 +28,31 @@ function createCard (name, price, image, id) {
     productContainer.appendChild(card);
     return card;
 }
+
+const handleDelete = (id) => {
+    servicesProducts.deleteProduct(id)
+        .then(() => {
+            const card = productContainer.querySelector(`[data-id="${id}"]`).closest(".card");
+            card.remove();
+            console.log("Producto eliminado");
+        })
+        .catch((err) => console.log(err));
+  };
+  
+  
+  
+  productContainer.addEventListener("click", (event) => {
+    if (event.target.classList.contains("delete-button")) {
+        const id = event.target.dataset.id;
+        servicesProducts.deleteProduct(id)
+            .then(() => {
+                event.target.closest(".card").remove();
+                console.log("Producto eliminado");
+            })
+            .catch((err) => console.log(err));
+    }
+  });
+
 
 const render = async () => {
     try {

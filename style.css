@@ -33,19 +33,27 @@
 
 /* <Seccion de productos> */
 
+
 section.productos{
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+   
+    
 }
 
 /* <form agregrar productos> */
 
+
+
 .form__title{
     text-align: center;
     padding: 10%;
+    font-weight: bold;
+    font-size: 24px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .formproductos__form{
@@ -132,23 +140,27 @@ section.productos{
 
 .title__productos{
     padding: 10% 0 0 0 ;
+    font-weight: bold;
+    font-size: 24px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .cards__container{
     width: 100%;
     display: flex;
     flex-direction: row;
-    gap: 10%;
+    gap: 5%;
     overflow-x: scroll;
     overflow-y: hidden;
     padding: 10% 0;
+    
 }
 
 .cards{
-    width: 196px;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 10%;
+    gap: 15%;
     background-color: #5307C8;
     padding: 5%;
     border-radius: 15px;
@@ -157,12 +169,17 @@ section.productos{
 }
 
 .img-container{
-    height: 196px;
+    width: 100%;
+}
+
+.img__producto{
+    width: 100%;
     border: 5px solid black;
 }
 
 
 .card-container--value{
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -172,9 +189,9 @@ section.productos{
 
 
 .delete-button{
-    width: 10%;
-    height: 10%;
-    right: 5%;
+    width: 50%;
+    border-style: none;
+    background-color: #5307C8;
 }
 
 .img__borrar{
@@ -230,7 +247,6 @@ section.productos{
     width: 40%;
     display: flex;
     flex-direction: column;
-    justify-content: start;
     align-items: center;
 }
 
@@ -266,19 +282,20 @@ section.productos{
     width: 100%;
     display: flex;
     flex-direction: row;
-    gap: 10%;
+    gap: 2%;
     overflow-x: hidden;
     overflow-y: scroll;
     padding: 2% 0;
+    flex-wrap: wrap;
 }
 
 .cards{
-    width: 196px;
+    width: 20%;
     display: flex;
     flex-direction: column;
     gap: 10%;
     background-color: #5307C8;
-    padding: 5%;
+    padding: 2%;
     border-radius: 15px;
     border: 5px solid black;
     color: white;
@@ -300,13 +317,17 @@ section.productos{
 
 
 .img__borrar{
-    width: 10%;
+    width: 20%;
     height: 10%;
     right: 5%;
 }
 
 
-
+section.footer{
+    display: flex;
+    bottom: 0;
+    position: fixed;
+}
 
 
 }
