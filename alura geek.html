@@ -23,65 +23,24 @@
 
     <main>
         <section class="productos">
-            <div class="agregar productos">
+            <div class="agregar_productos">
                 <h1 class="form__title">Agregar productos</h2>
-                <form class="formproductos__form" id="form" name="form">
-                    <input class="formproducto__input" type="text" id="nombre" name="nombre" placeholder="Nombre...">
-                    <input class="formproducto__input" type="price" id="precio" name="precio" placeholder="Precio...">
-                    <input class="formproducto__input" type="url" id="imagen" name="imagen" placeholder="Imagen...">
-                </form>
+                <form data-form class="formproductos__form" id="form" name="form">
+                    <input data-name class="formproducto__input" type="text" id="nombre" name="nombre" placeholder="Nombre...">
+                    <input data-price class="formproducto__input" type="price" id="precio" name="precio" placeholder="Precio...">
+                    <input data-image class="formproducto__input" type="url" id="imagen" name="imagen" placeholder="Imagen...">
+                
                 <div class="botones">
-                    <button type="submit" class="formproductos__enviar">Enviar</button>
+                    <button submit type="submit" class="formproductos__enviar">Enviar</button>
                     <button type="reset" class="formproductos__limpiar">Limpiar</button>
                 </div>
+            </form>
             </div>
 
             <div class="card__productos">
             <h1 class="title__productos">Mis Productos</h1>
-                <div class="cards__container">
-                    <div class="cards">
-                        <img class="img__producto" src="./assets/imagen_producto.png"/>
-                            <div class="card-container--info">
-                                <p>Nombre</p>
-                                <div class="card-container--value">
-                                    <p>$ 00.00</p>
-                                    <img class="img__borrar" src="./assets/trash.png" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cards">
-                        <img class="img__producto" src="./assets/imagen_producto.png" />
-                            <div class="card-container--info">
-                            <p>Nombre</p>
-                            <div class="card-container--value">
-                                <p>$ 00.00</p>
-                                <img class="img__borrar" src="./assets/trash.png" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="cards__container">
-                    <div class="cards">
-                        <img class="img__producto" src="./assets/imagen_producto.png"/>
-                            <div class="card-container--info">
-                                <p>Nombre</p>
-                                <div class="card-container--value">
-                                    <p>$ 00.00</p>
-                                    <img class="img__borrar" src="./assets/trash.png" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cards">
-                        <img class="img__producto" src="./assets/imagen_producto.png" />
-                            <div class="card-container--info">
-                            <p>Nombre</p>
-                            <div class="card-container--value">
-                                <p>$ 00.00</p>
-                                <img class="img__borrar" src="./assets/trash.png" />
-                            </div>
-                        </div>
-                    </div>
+                <div data-products class="cards__container">
+                    
                 </div>
             </div>
       </section>
@@ -94,5 +53,6 @@
             </div>
         </section>
         
+        <script type="module" src="js/controller/main.js"></script>
     </main>
 </body>

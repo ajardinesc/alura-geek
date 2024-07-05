@@ -1,0 +1,15 @@
+{
+  "name": "alura-geek",
+  "version": "1.0.0",
+  "description": "ecommerce",
+  "main": "index.js",
+  "scripts": {
+    "start": "json-server --watch ./database/db.json --port 3000"
+  },
+  "author": "Angel Jardines",
+  "license": "ISC",
+  "keywords": [],
+  "dependencies": {
+    "json-server": "^1.0.0-beta.1"
+  }
+}

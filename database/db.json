@@ -1,0 +1,24 @@
+{
+  "products": [
+    {
+      "name": "darth vader",
+      "price": "50",
+      "image": "https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/6101047624067?fmt=webp&qlt=70&wid=768&hei=768",
+      "Id": 1,
+      "id": "386b"
+    },
+    {
+      "name": "darth vader",
+      "price": "50",
+      "image": "https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/6101047624067?fmt=webp&qlt=70&wid=768&hei=768",
+      "Id": 1,
+      "id": "90c5"
+    },
+    {
+      "id": "e335",
+      "name": "hulk",
+      "price": "25",
+      "image": "https://m.media-amazon.com/images/I/516IaPyMKgL._AC_UF894,1000_QL80_.jpg"
+    }
+  ]
+}
